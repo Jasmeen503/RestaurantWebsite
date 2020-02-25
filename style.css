@@ -1,0 +1,172 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+h2{
+  margin: 0;
+}
+
+/* landing Page */
+#landing-page {
+  background-image: url('restaurantImage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.title-background{
+  background-color: #070707;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+}
+.title {
+  text-align: center;
+  color: #D0D3D4;
+  font-size: 25px;
+}
+
+/* nav slider */
+.nav-slider {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.line {
+  background-color: #eee;
+  height: 3px;
+  margin: 5px;
+  width: 30px;
+}
+
+.line:nth-child(1) {
+  margin-top: 0;
+}
+
+/* nav-slider-section */
+.nav-slider-section {
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+.nav-close {
+   border: none;
+   outline: none;
+   float: right;
+   background-color: transparent;
+   color: #F1C40f;
+   cursor: pointer;
+   font-size: 20px;
+   padding: 15px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links li {
+  text-align: center;
+  padding: 10px;
+}
+
+.nav-link1, .nav-link2 {
+  text-decoration: none;
+  color: #eee;
+  font-size: 25px;
+}
+
+.openNav {
+    animation: openNav 0.5s forwards;
+}
+
+.closeNav {
+    animation: closeNav 0.5s forwards;
+}
+
+@keyframes openNav {
+  100% {
+      transform: translateX(0%);
+  }
+}
+
+@keyframes closeNav {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Menu */
+#menu {
+  background-color: #000;
+}
+
+.menu-title {
+  color: #D0D3D4;
+  text-align: center;
+  padding: 25px;
+  font-size: 25px;
+}
+
+p {
+  font-size: 15px;
+  color: #eee;
+}
+
+.menu-price {
+  float: right;
+}
+
+/* Restaurant Information */
+#restaurant-info {
+  background: #070707;
+  padding: 20px;
+}
+
+.res-info-title {
+  color: #D3CAC8;
+  text-align: center;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.address-content, .buisness-hours, .contact-info {
+  padding: 10px;
+}
+
+.address, .hours {
+  font-size: 11px important;
+  text-align: center;
+}
+
+.phone {
+  font-size: 11px important;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .info-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .address-content, .buisness-hours {
+    border-right: 1px solid #eee;
+    padding: 30px;
+  }
+  .contact-info {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Indian Style</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="tabs.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  </head>
+  <body>
+
+    <main>
+      <section id="landing-page">
+        <div class="nav-slider">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <header class="title-background">
+          <h2 class="title">Indian Style</h2>
+        </header>
+      </section>
+
+      <section class="nav-slider-section">
+        <button class="nav-close">X</button>
+        <section class="nav-links">
+          <ul>
+            <li class="=nav-link1"><a href="#menu">Menu</a></li>
+            <li class="=nav-link2"><a href="#restaurant-info">Restaurant Information</a></li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="menu">
+        <h2 class="menu-title">Menu</h2>
+        <section class="tabs-container">
+            <!-- <section class="tabs">
+                <button type="button" name="button" class="tabHeader active-tab" data-tab="1">Vegetarian Specialties</button>
+                <button type="button" name="button" class="tabHeader" data-tab="2">Indian Breads</button>
+                <button type="button" name="button" class="tabHeader" data-tab="3">Appetizers</button>
+                <button type="button" name="button" class="tabHeader" data-tab="4">Drinks</button>
+                <button type="button" name="button" class="tabHeader" data-tab="5">Deserts</button>
+            </section> -->
+
+            <!-- Tab links -->
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'Main Course')" id="defaultOpen">Main Course</button>
+              <button class="tablinks" onclick="openCity(event, 'Indian Breads')">Indian Breads</button>
+              <button class="tablinks" onclick="openCity(event, 'Appetizers')">Appetizers</button>
+              <button class="tablinks" onclick="openCity(event, 'Deserts')">Deserts</button>
+            </div>
+
+            <!-- <section id="tabSection-1" class="tabSection show-tab">
+                <p>1. Navrathna Korma<span class="menu-price">$10.00</span></p>
+                <p>2. Matar Paneer<span class="menu-price">$11.00</span></p>
+                <p>3. Aloo Gobhi Masala<span class="menu-price">$8.00</span></p>
+                <p>4. Malai Kofta Curry<span class="menu-price">$10.00</span></p>
+                <p>5. Karahi Paneer<span class="menu-price">$11.00</span></p>
+
+            </section>
+
+            <section id="tabSection-2" class="tabSection hide-tab">
+                <p>1. Nan<span class="menu-price">$3.00</span></p>
+                <p>2. Garlic Nan<span class="menu-price">$4.00</span></p>
+                <p>3. Aloo Nan<span class="menu-price">$4.00</span></p>
+                <p>4. Onion Or Paneer Nan<span class="menu-price">$4.00</span></p>
+                <p>5. Tandoori Roti<span class="menu-price">$3.00</span></p>
+
+            </section>
+
+            <section id="tabSection-3" class="tabSection hide-tab">
+                <p>1. Vegetable Samosa<span class="menu-price">$3.00</span></p>
+                <p>2. Dahi Bhalla<span class="menu-price">$3.00</span></p>
+                <p>3. Pao Bhaji<span class="menu-price">$5.00</span></p>
+                <p>4. Allo Tikki<span class="menu-price">$5.00</span></p>
+                <p>5. Vagetable Pakora<span class="menu-price">$4.00</span></p>
+
+            </section>
+
+            <section id="tabSection-4" class="tabSection hide-tab">
+                <p>1. Canned Soda<span class="menu-price">$2.00</span></p>
+                <p>2. Milk Badam<span class="menu-price">$4.00</span></p>
+                <p>3. Mango Lassi<span class="menu-price">$4.00</span></p>
+                <p>4. Mango Shake<span class="menu-price">$4.00</span></p>
+                <p>5. Sweet Lassi<span class="menu-price">$3.00</span></p>
+
+            </section>
+
+            <section id="tabSection-5" class="tabSection hide-tab">
+                <p>1. Kheer Rice Pudding<span class="menu-price">$4.00</span></p>
+                <p>2. Gulab Jamun<span class="menu-price">$4.00</span></p>
+                <p>3. Mango Kulfi-Indian Ice Cream<span class="menu-price">$5.00</span></p>
+                <p>4. Mango chutney Cheese Cake<span class="menu-price">$5.00</span></p>
+                <p>5. Coconut Chocolate Cheese Cake<span class="menu-price">$5.00</span></p>
+
+            </section> -->
+
+            <!-- Tab content -->
+            <div id="Main Course" class="tabcontent">
+              <p>1. Navrathna Korma<span class="menu-price">$10.00</span></p>
+              <p>2. Matar Paneer<span class="menu-price">$11.00</span></p>
+              <p>3. Aloo Gobhi Masala<span class="menu-price">$8.00</span></p>
+              <p>4. Malai Kofta Curry<span class="menu-price">$10.00</span></p>
+              <p>5. Karahi Paneer<span class="menu-price">$11.00</span></p>
+            </div>
+
+            <div id="Indian Breads" class="tabcontent">
+              <p>1. Nan<span class="menu-price">$3.00</span></p>
+              <p>2. Garlic Nan<span class="menu-price">$4.00</span></p>
+              <p>3. Aloo Nan<span class="menu-price">$4.00</span></p>
+              <p>4. Onion Or Paneer Nan<span class="menu-price">$4.00</span></p>
+              <p>5. Tandoori Roti<span class="menu-price">$3.00</span></p>
+            </div>
+
+            <div id="Appetizers" class="tabcontent">
+              <p>1. Vegetable Samosa<span class="menu-price">$3.00</span></p>
+              <p>2. Dahi Bhalla<span class="menu-price">$3.00</span></p>
+              <p>3. Pao Bhaji<span class="menu-price">$5.00</span></p>
+              <p>4. Allo Tikki<span class="menu-price">$5.00</span></p>
+              <p>5. Vagetable Pakora<span class="menu-price">$4.00</span></p>
+            </div>
+
+            <div id="Deserts" class="tabcontent">
+              <p>1. Kheer Rice Pudding<span class="menu-price">$4.00</span></p>
+              <p>2. Gulab Jamun<span class="menu-price">$4.00</span></p>
+              <p>3. Mango Kulfi-Indian Ice Cream<span class="menu-price">$5.00</span></p>
+              <p>4. Mango chutney Cheese Cake<span class="menu-price">$5.00</span></p>
+              <p>5. Coconut Chocolate Cheese Cake<span class="menu-price">$5.00</span></p>
+            </div>
+
+          </section>
+      </section>
+
+      <section id="restaurant-info">
+        <section class="info-container">
+            <section class="address-content">
+              <h2 class="res-info-title">Address</h2>
+              <p class="address">Karol Bagh Plaza</p>
+              <p class="address">Brampton, Ontario</p>
+            </section>
+
+            <section class="buisness-hours">
+              <h2 class="res-info-title">Buisness Hours</h2>
+              <p class="hours">Monday - Friday: 9am-3pm</p>
+              <p class="hours">Saturday - Sunday: 5pm-12am</p>
+            </section>
+
+            <section class="contact-info">
+              <h2 class="res-info-title">Take Out</h2>
+              <p class="phone">Call Us: 000-123-0123</p>
+            </section>
+      </section>
+    </section>
+    </main>
+
+    <script src="script.js" charset="utf-8"></script>
+    <script src="tabs.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>
